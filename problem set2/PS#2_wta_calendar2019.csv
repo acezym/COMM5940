@@ -1,0 +1,74 @@
+	tournament	date	location	prize	category
+0	 SHENZHEN Shenzhen Open	 30 Dec - 05 Jan (2019)	 CHINA	 $ 750,000	 International
+1	 AUCKLAND ASB Classic	 31 Dec - 06 Jan (2019)	 NEW ZEALAND	 $ 250,000	 International
+2	 BRISBANE Brisbane International	 31 Dec - 06 Jan (2019)	 AUSTRALIA	 $ 1,000,000	 Premier
+3	 SYDNEY Sydney International	 07 Jan - 12 Jan (2019)	 AUSTRALIA	 $ 823,000	 Premier
+4	 HOBART Hobart International	 07 Jan - 12 Jan (2019)	 AUSTRALIA	 $ 250,000	 International
+5	 MELBOURNE Australian Open	 14 Jan - 26 Jan (2019)	 AUSTRALIA	 $ 21,438,038	 Grand Slam
+6	 NEWPORT BEACH Oracle Challenger Series	 21 Jan - 27 Jan (2019)	 UNITED STATES	 $ 162,480	 125K
+7	 HUA HIN Toyota Thailand Open presented by E@	 28 Jan - 03 Feb (2019)	 THAILAND	 $ 250,000	 International
+8	 ST. PETERSBURG St. Petersburg Ladies Trophy	 28 Jan - 03 Feb (2019)	 RUSSIA	 $ 823,000	 Premier
+9	 FED CUP GROUP 1 AMERICAS	 06 Feb - 08 Feb (2019)	 COLOMBIA	 $	 Grand Slam
+10	 FED CUP GROUP 1 ASIA/OCEANIA	 06 Feb - 08 Feb (2019)	 KAZAKHSTAN	 $	 Grand Slam
+11	 FED CUP GROUP 1 EVENT A EUROPE/AFRICA	 06 Feb - 09 Feb (2019)	 POLAND	 $	 Grand Slam
+12	 FED CUP GROUP 1 EVENT B EUROPE/AFRICA	 06 Feb - 09 Feb (2019)	 GREAT BRITAIN	 $	 Grand Slam
+13	 GROUP 1 PLAYOFFS AMERICAS	 09 Feb - 09 Feb (2019)	 COLOMBIA	 $	 Grand Slam
+14	 FED CUP WORLD		 COLOMBIA		
+15	 GROUP 1 PLAYOFFS ASIA/OCEANIA	 09 Feb - 09 Feb (2019)	 KAZAKHSTAN	 $	 Grand Slam
+16	 GROUP 1 EVENT A PLAYOFFS EUROPE/AFRICA	 09 Feb - 09 Feb (2019)	 POLAND	 $	 Grand Slam
+17	 GROUP 1 EVENT A PLAYOFFS EUROPE/AFRICA	 09 Feb - 09 Feb (2019)	 GREAT BRITAIN	 $	 Grand Slam
+18	 DOHA Qatar Total Open 2019	 11 Feb - 16 Feb (2019)	 QATAR	 $ 916,131	 Premier
+19	 DUBAI Dubai Duty Free Tennis Championships	 17 Feb - 23 Feb (2019)	 UNITED ARAB EMIRATES	 $ 2,828,000	 Premier 5
+20	 BUDAPEST Hungarian Ladies Open	 18 Feb - 24 Feb (2019)	 HUNGARY	 $ 250,000	 International
+21	 INDIAN WELLS Oracle Challenger Series	 25 Feb - 03 Mar (2019)	 UNITED STATES	 $ 162,480	 125K
+22	 ACAPULCO Abierto Mexicano TELCEL presentado por HSBC	 25 Feb - 02 Mar (2019)	 MEXICO	 $ 250,000	 International
+23	 INDIAN WELLS BNP Paribas Open	 06 Mar - 17 Mar (2019)	 USA, CA	 $ 9,035,428	 Premier Mandatory
+24	 GUADALAJARA Abierto Zapopan	 11 Mar - 16 Mar (2019)	 MEXICO	 $ 125,000	 125K
+25	 MIAMI Miami Open presented by Itau	 19 Mar - 30 Mar (2019)	 USA, FL	 $ 9,035,428	 Premier Mandatory
+26	 MONTERREY Abierto GNP Seguros	 01 Apr - 07 Apr (2019)	 MEXICO	 $ 250,000	 International
+27	 CHARLESTON Volvo Car Open	 01 Apr - 07 Apr (2019)	 USA, SC	 $ 823,000	 Premier
+28	 BOGOTA Claro Open Colsanitas	 08 Apr - 14 Apr (2019)	 COLOMBIA	 $ 250,000	 International
+29	 LUGANO Samsung Open presented by Corner	 08 Apr - 14 Apr (2019)	 SWITZERLAND	 $ 250,000	 International
+30	 ANNING 2019 Kunming Open	 22 Apr - 27 Apr (2019)	 CHINA	 $ 125,000	 125K
+31	 STUTTGART Porsche Tennis Grand Prix	 22 Apr - 28 Apr (2019)	 GERMANY	 $ 886,077	 Premier
+32	 ISTANBUL TEB BNP Paribas Istanbul Cup	 22 Apr - 28 Apr (2019)	 TURKEY	 $ 250,000	 International
+33	 PRAGUE J&T Banka Prague Open	 29 Apr - 04 May (2019)	 CZECH REPUBLIC	 $ 250,000	 International
+34	 RABAT Grand Prix De SAR La Princesse Lalla Meryem	 29 Apr - 04 May (2019)	 MOROCCO	 $ 250,000	 International
+35	 MADRID Mutua Madrid Open	 04 May - 11 May (2019)	 SPAIN	 $ 7,021,128	 Premier Mandatory
+36	 ROME Internazionali BNL d'Italia	 13 May - 19 May (2019)	 ITALY	 $ 3,452,538	 Premier 5
+37	 STRASBOURG Internationaux de Strasbourg	 19 May - 25 May (2019)	 FRANCE	 $ 250,000	 International
+38	 NÜRNBERG  NÜRNBERGER VERSICHERUNGSCUP 2019	 19 May - 25 May (2019)	 GERMANY	 $ 250,000	 International
+39	 PARIS Championnats Internationaux de France	 26 May - 08 Jun (2019)	 FRANCE	 $	 Grand Slam
+40	 BOL Croatia Bol Open	 04 Jun - 09 Jun (2019)	 CROATIA	 $ 125,000	 125K
+41	 'S-HERTOGENBOSCH Libema Open	 10 Jun - 16 Jun (2019)	 NETHERLANDS	 $ 250,000	 International
+42	 NOTTINGHAM Nature Valley Open	 10 Jun - 16 Jun (2019)	 GREAT BRITAIN	 $ 250,000	 International
+43	 BIRMINGHAM Nature Valley Classic	 17 Jun - 23 Jun (2019)	 GREAT BRITAIN	 $ 1,006,263	 Premier
+44	 MALLORCA Mallorca Open	 17 Jun - 23 Jun (2019)	 SPAIN	 $ 250,000	 International
+45	 EASTBOURNE Nature Valley International	 23 Jun - 29 Jun (2019)	 GREAT BRITAIN	 $ 998,712	 Premier
+46	 WIMBLEDON The Championships	 01 Jul - 13 Jul (2019)	 GREAT BRITAIN	 $	 Grand Slam
+47	 BASTAD Swedish Open	 08 Jul - 14 Jul (2019)	 SWEDEN	 $ 125,000	 125K
+48	 LAUSANNE Ladies Championships Lausanne	 15 Jul - 21 Jul (2019)	 SWITZERLAND	 $ 250,000	 International
+49	 BUCHAREST Bucharest Open	 15 Jul - 21 Jul (2019)	 ROMANIA	 $ 250,000	 International
+50	 JURMALA Baltic Open	 22 Jul - 28 Jul (2019)	 LATVIA	 $ 250,000	 International
+51	 PALERMO Palermo Ladies Open	 22 Jul - 28 Jul (2019)	 ITALY	 $ 250,000	 International
+52	 SAN JOSE Mubadala Silicon Valley Classic	 29 Jul - 04 Aug (2019)	 UNITED STATES, CA	 $ 876,183	 Premier
+53	 KARLSRUHE Liqui Moly Open Karlsruhe	 29 Jul - 04 Aug (2019)	 GERMANY	 $ 125,000	 125K
+54	 WASHINGTON DC Citi Open	 29 Jul - 04 Aug (2019)	 UNITED STATES, DC	 $ 250,000	 International
+55	 TORONTO Coupe Rogers présentée par Banque Nationale	 05 Aug - 11 Aug (2019)	 CANADA	 $	 Premier 5
+56	 CINCINNATI Western & Southern Open	 12 Aug - 18 Aug (2019)	 UNITED STATES, OH	 $	 Premier 5
+57	 FLUSHING MEADOWS 2019 US OPEN TENNIS CHAMPIONSHIPS	 26 Aug - 07 Sep (2019)	 USA, NY	 -	 Grand Slam
+58	 HIROSHIMA Hana-cupid Japan Women's Open	 09 Sep - 15 Sep (2019)	 JAPAN	 $ 250,000	 International
+59	 QUEBEC CITY Coupe Banque Nationale	 09 Sep - 15 Sep (2019)	 CANADA	 $ 250,000	 International
+60	 NANCHANG Jiangxi Open	 09 Sep - 15 Sep (2019)	 CHINA	 $ 250,000	 International
+61	 TOKYO Toray Pan Pacific Open Tennis Tournament	 16 Sep - 22 Sep (2019)	 JAPAN	 -	 Premier
+62	 GUANGZHOU Guangzhou Open	 16 Sep - 21 Sep (2019)	 CHINA	 $ 250,000	 International
+63	 SEOUL Korea Open	 16 Sep - 22 Sep (2019)	 KOREA	 $ 250,000	 International
+64	 WUHAN Wuhan Open	 22 Sep - 28 Sep (2019)	 CHINA	 -	 Premier 5
+65	 TASHKENT Tashkent Open	 23 Sep - 28 Sep (2019)	 UZBEKISTAN	 $ 250,000	 International
+66	 BEIJING China Open	 28 Sep - 06 Oct (2019)	 CHINA	 -	 Premier Mandatory
+67	 TIANJIN Tianjin Open	 07 Oct - 13 Oct (2019)	 CHINA	 $ 250,000	 International
+68	 HONG KONG Prudential Hong Kong Tennis Open	 07 Oct - 13 Oct (2019)	 HONG KONG, CHINA	 $ 250,000	 International
+69	 LINZ Upper Austria Ladies Linz	 07 Oct - 13 Oct (2019)	 AUSTRIA	 $ 250,000	 International
+70	 MOSCOW VTB Kremlin Cup	 14 Oct - 20 Oct (2019)	 RUSSIA	 -	 Premier
+71	 LUXEMBOURG BGL BNP Paribas Luxembourg Open	 14 Oct - 20 Oct (2019)	 LUXEMBOURG	 $ 250,000	 International
+72	 ZHUHAI WTA Elite Trophy Zhuhai	 22 Oct - 27 Oct (2019)	 CHINA	 $	 Finals
