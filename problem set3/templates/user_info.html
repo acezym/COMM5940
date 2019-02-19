@@ -97,17 +97,25 @@
                 <h2 class="section-heading mb-4">
                     <span class="section-heading-upper">Total Points for Each Action</span>
                 </h2>
-                <br>
+                <br><br>
                 <div id="chart1"></div>
-            </div>
+            </div><br><br><br>
 <!--chart2-->
             <div class="container">
                 <h2 class="section-heading mb-4">
                     <span class="section-heading-upper">No. of Users for Each Action</span>
                 </h2>
-                <br>
+                <br><br>
                 <div id="chart2"></div>
-            </div>
+            </div><br><br><br>
+<!--chart3-->
+            <div class="container">
+                <h2 class="section-heading mb-4">
+                    <span class="section-heading-upper">Total Points for Each Membership Level</span>
+                </h2>
+                <br><br>
+                <div id="chart3"></div>
+            </div><br><br><br>
             </div><!--end cta-->
           </div>
         </div>
@@ -181,6 +189,27 @@
                     show: false,
                 }
             }); // end chart 2 c3.generate
+
+        var chart3 = c3.generate({
+          bindto  :'#chart3',
+                data: {
+                    columns: [{% for membership, mem_points in membership %}
+                                ['{{membership}}',{{mem_points}}],
+                              {% endfor %}
+                             ],
+                   type : 'bar'
+                 },
+                axis: {
+                  x: {label: 'Membership Levels'},
+                  y: {label: 'Total Points'}
+                },
+                bar: {
+                    title: "Total Points for Each Membership Level",
+                },
+                tooltip: {
+                    show: false,
+                }
+            }); // end chart 3 c3.generate
 
     $('#user_table').DataTable({
                 "paging":   true,

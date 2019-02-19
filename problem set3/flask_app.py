@@ -109,4 +109,18 @@ def user():
     for i in dict['records']:
             dict = i['fields']
             dataset3.append(dict)
-    return render_template('user_info.html', points = zip(action_list, ref_points_list), userinfos = zip(action_list2, ref_user_list), usertable=dataset3, title='Membership Information')
+
+    r4 = requests.get('https://api.airtable.com/v0/appoV0NAlyurAsQK8/membership_level?api_key=keyGHT4s0GhgAfOSe', headers=headers, params=params)
+    dict4 = r4.json()
+    dict5 = {}
+    dataset4 = []
+    membership_list = []
+    mem_points_list = []
+    for i in dict4['records']:
+         dict5 = i['fields']
+         dataset4.append(dict5)
+    for item in dataset4:
+        membership_list.append(item.get('membership'))
+        mem_points_list.append(item.get('membership_points'))
+
+    return render_template('user_info.html', points = zip(action_list, ref_points_list), userinfos = zip(action_list2, ref_user_list), usertable=dataset3, membership=zip(membership_list,mem_points_list), title='Membership Information')
