@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="PS3 Wordpress users info">
+    <meta name="author" content="Yiming">
+
+    <title>Let's see the users</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/business-casual.min.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+
+    <h1 class="site-heading text-center text-white d-none d-lg-block">
+      <span class="site-heading-upper text-primary mb-3">Let's Xplore</span>
+      <span class="site-heading-lower">Let's check the users.</span>
+    </h1>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="/">WTA Tennis Players</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="/">Home</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="/calendar">Calendar Table</a>
+            </li>
+            <li class="nav-item active px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="/user">User Chart</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="/data">Players Data</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!--page content-->
+
+    <section class="page-section cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div class="cta-inner text-center rounded">
+<!--datatable-->
+            <div class="container">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">User datatable</span>
+              </h2>
+                    <table id="user_table" class="table table-striped" style="width:100%" >
+                    <thead>
+                      <tr>
+                        <th>User ID</th>
+                        <th>Membership Level</th>
+                        <th>Actions</th>
+                        <th>Points</th>
+                        <th>My suggestion</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                       {% for row in usertable %}
+                          <tr>
+                            <td>{{ row["user_login"] }}</td>
+                            <td>{{ row["membership"] }}</td>
+                            <td>{{ row["ref_name"] }}</td>
+                            <td>{{ row["creds"] }}</td>
+                            <td>{{ row["comments"] }}</td>
+                          </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <br><br><br>
+<!--chart1-->
+            <div class="container">
+                <h2 class="section-heading mb-4">
+                    <span class="section-heading-upper">Total Points for Each Action</span>
+                </h2>
+                <br>
+                <div id="chart1"></div>
+            </div>
+<!--chart2-->
+            <div class="container">
+                <h2 class="section-heading mb-4">
+                    <span class="section-heading-upper">No. of Users for Each Action</span>
+                </h2>
+                <br>
+                <div id="chart2"></div>
+            </div>
+            </div><!--end cta-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer text-faded text-center py-5">
+      <div class="container">
+        <p class="m-0 small">Copyright &copy; Yiming @2019</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/scriptlib.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--datatable-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+    <!-- Load c3 &d3 -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.css" rel="stylesheet" type="text/css">
+
+<script>
+    $(document).ready(function(){
+      var chart1 = c3.generate({
+          bindto  :'#chart1',
+                data: {
+                    columns: [{% for action, point in points %}
+                                ['{{action}}',{{point}}],
+                              {% endfor %}
+                             ],
+                   type : 'bar'
+                 },
+                axis: {
+                  x: {label: 'Actions'},
+                  y: {label: 'Total Points'}
+                },
+                bar: {
+                    title: "Total Points for Each Action:",
+                },
+                tooltip: {
+                    show: false,
+                }
+            }); // end chart 1 c3.generate
+
+        var chart2 = c3.generate({
+          bindto  :'#chart2',
+                data: {
+                    columns: [{% for action, user in userinfos %}
+                                ['{{action}}',{{user}}],
+                              {% endfor %}
+                             ],
+                   type : 'bar'
+                 },
+                axis: {
+                  x: {label: 'Actions'},
+                  y: {label: 'No. of Users'}
+                },
+                bar: {
+                    title: "No. of Users for Each Action",
+                },
+                tooltip: {
+                    show: false,
+                }
+            }); // end chart 2 c3.generate
+
+    $('#user_table').DataTable({
+                "paging":   true,
+                "ordering": true,
+                "searching": true
+              });
+    });
+</script>
+
+
+  </body>
+
+</html>
